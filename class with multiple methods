@@ -1,0 +1,20 @@
+class sample:
+    def addition(self, a, b):
+        print(a + b)
+    def subtract(self, a, b):
+        print(a - b)
+    def multiply(self, a, b):
+        print(a * b)
+    def divide(self, a, b):
+        print(a % b)
+s1 = sample()
+s1.addition(2,3)
+s1.subtract(0,565656)
+s1.multiply(545,6564)
+s1.divide(545,2)
+    
+    
+    
+    
+    
+    
