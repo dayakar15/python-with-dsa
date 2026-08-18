@@ -1,0 +1,25 @@
+class Student:
+    def __init__(self, name, marks):
+        self.name = name
+        self.marks = marks
+    def display_result(self):
+        print("Name:", self.name)
+        print("Marks:", self.marks)
+        if self.marks >= 90:
+            print("Result: Excellent")
+        elif self.marks >= 75:
+            print("Result: Good")
+        elif self.marks >= 50:
+            print("Result: Pass")
+        else:
+            print("FAIL")
+        
+s1 = Student("chintu", 85)
+s2 = Student("ram", 56)
+s3 = Student("dolli", 23)
+
+s1.display_result()
+
+s2.display_result()
+
+s3.display_result()
