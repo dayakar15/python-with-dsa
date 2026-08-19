@@ -1,0 +1,20 @@
+class Product:
+    def __init__(self, name, price, quantity):
+        self.name = name
+        self.price = price
+        self.quantity = quantity
+     
+        
+    def display(self):
+        
+        print("Product name:", self.name)
+        print("product price:", self.price)
+        print("product quantity:", self.quantity)
+        
+        
+    def total_price(self):
+        print("total price:", self.price * self.quantity)
+p1 = Product("food", 250, 20)
+p1.display()
+p1.total_price()
+        
