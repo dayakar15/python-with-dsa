@@ -1,0 +1,12 @@
+class Animal:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    def eat(self):
+        print("Dog is Eating")
+class Dog(Animal):
+    def Bark(self):
+        print(" Dog is barking")
+d1 = Dog("chimtu", 10)
+d1.eat()
+d1.Bark()
