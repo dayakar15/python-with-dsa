@@ -1,0 +1,13 @@
+class Animal:
+    def eat(self):
+        print("Animal is eating")
+class dog(Animal):
+    def bark(self):
+        print("dog is Barking")
+class puppy(dog):
+    def happy(Dog):
+        print("Puppy is happy")
+p1 = puppy()
+p1.eat()
+p1.bark()
+p1.happy()
