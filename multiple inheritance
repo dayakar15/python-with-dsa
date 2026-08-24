@@ -1,0 +1,20 @@
+class Father():
+    def Father_Property(self, place, price):
+        self.place = place
+        self.price = price
+        print("place:", self.place)
+        print("price:", self.price)
+class Mother():
+    def Mother_Property(self, house, gold):
+        self.house = house
+        self.gold = gold
+        print("house:", self.house)
+        print("gold:", self.gold)
+class child(Father, Mother):
+    def own_property(self):
+        print("child owned the property")
+
+c1 = child()
+c1.Father_Property("Hyderabad", 20000)
+c1.Mother_Property("own", 20)
+c1.own_property()
