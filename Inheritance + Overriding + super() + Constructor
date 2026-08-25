@@ -1,0 +1,19 @@
+class Employee:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    def display(self):
+        print("Employee name:", self.name)
+        print("Employee age:", self.age)
+        
+    def work(self):
+        print("Employee is working")
+                 
+class Developer(Employee):
+    def work(self):
+        super().work()
+        print("Developer is Writting code")
+
+d1= Developer("chintu", 20)
+d1.display()
+d1.work()
