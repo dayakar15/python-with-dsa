@@ -1,0 +1,19 @@
+class Car:
+    def Move(self):
+        print("Car is Moving")
+class Boat:
+    def Move(self):
+        print("Boat is Moving")
+class Aeroplane:
+    def Move(self):
+        print("Aeroplane is Flying")
+def start_movement(vehicle):
+    vehicle.Move()
+    
+  
+c = Car()
+b = Boat()
+a = Aeroplane()
+start_movement(c)
+start_movement(b)
+start_movement(a)
