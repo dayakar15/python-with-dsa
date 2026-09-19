@@ -1,0 +1,14 @@
+product_id = [102, 115, 123, 137, 145, 158, 164, 179, 190, 205]
+target = 100
+def fuction(product_id, low, high):
+    for i in range(len(product_id)):
+        mid = (low + high)//2
+        if (product_id[mid] == target):
+            return mid
+        elif product_id[mid] < target:
+            low = mid + 1
+        else:
+            high = mid - 1
+    return -1
+print(fuction(product_id,0,len(product_id)))
+                
