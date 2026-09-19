@@ -1,0 +1,16 @@
+student_id = [101, 105, 105, 105, 110, 115, 120, 125]
+target = 105
+j=0;
+def function(student_id, low,high):
+    for i in range(len(student_id)):
+        mid = low + high // 2
+        if student_id[mid] == target:
+            j=mid
+            low=mid+1
+        elif student_id[mid] < target:
+            low = mid + 1
+        else:
+            high = mid - 1
+    print(j)
+            
+function(student_id, 0, len(student_id))
