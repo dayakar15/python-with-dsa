@@ -1,0 +1,15 @@
+numbers = [101, 105, 109, 114, 120, 126, 132, 140, 148, 155]
+target = 126
+def is_present(numbers, low, high):
+    for i in range(len(numbers)):
+        mid = (low + high )// 2
+        if numbers[mid] == target:
+            return "present"
+        elif numbers[mid] < target:
+            low = mid + 1
+        else:
+            high = mid - 1
+            
+print(is_present(numbers,0,len(numbers)-1))
+        
+    
